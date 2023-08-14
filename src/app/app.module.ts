@@ -12,11 +12,6 @@ import { ToastrModule } from 'ngx-toastr';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { SearchComponent } from './search/search.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatNativeDateModule } from '@angular/material/core';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-
 
 @NgModule({
   declarations: [
@@ -35,10 +30,6 @@ import {MatInputModule} from '@angular/material/input';
     FormsModule,
     NoteModule,
     HttpClientModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatFormFieldModule,
-    MatInputModule,
     ToastrModule.forRoot({
       positionClass :'toast-bottom-right'
     }),
