@@ -1,0 +1,45 @@
+
+<div class="container">
+    <h3>Here are your favorites and the three most recent notes!</h3>
+    <h5>Favorites</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Body</th>
+                <th scope="col">Favorite</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let note of favoriteNotes">
+                <th scope="row">{{ note.id }}</th>
+                <th>{{ note.title }}</th>
+                <th>{{ note.body }}</th>
+                <th>{{ note.favorite }}</th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h5>Most Recent</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Body</th>
+                <th scope="col">Date Created</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let note of recentNotes">
+                <th scope="row">{{ note.id }}</th>
+                <th>{{ note.title }}</th>
+                <th>{{ note.body }}</th>
+                <th>{{ note.date }}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>

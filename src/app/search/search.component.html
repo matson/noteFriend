@@ -1,0 +1,29 @@
+
+<div class="main-container">
+    <label for="start">Find a Note from Date Created:</label>
+    <body>
+          
+        <label>
+            Enter the Date:
+            <input type="date" name="date" [(ngModel)]="dateField" (ngModelChange)="filterDate($event)">
+            <br>
+        </label>
+    </body>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Body</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let note of filteredNote">
+                <th scope="row">{{ note.id }}</th>
+                <th>{{ note.title }}</th>
+                <th>{{ note.body }}</th>
+            </tr>
+        </tbody>
+    </table>
+</div>

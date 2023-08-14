@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "username": "jazz23!",
+      "password": "tree1234",
+      "confirmPassword": "tree1234",
+      "id": 1
+    },
+    {
+      "username": "tina3000",
+      "password": "applepie#",
+      "confirmPassword": "applepie#",
+      "id": 2
+    },
+    {
+      "username": "catlady2023",
+      "password": "crumbs34",
+      "confirmPassword": "crumbs34",
+      "id": 3
+    }
+  ],
+  
+  "notes": [
+    {
+      "id": 6,
+      "title": "Movies",
+      "body": "Barbie",
+      "date": "Fri Aug 11 2023 13:32:48 GMT-0400 (Eastern Daylight Time)",
+      "favorite": false
+    },
+    {
+      "id": 15,
+      "title": "New Format for Date",
+      "body": "testing",
+      "date": "2023-08-14",
+      "favorite": false
+    },
+    {
+      "id": 16,
+      "title": "Urgent",
+      "body": "Need to pay tickets",
+      "date": "2023-08-14",
+      "favorite": true
+    },
+    {
+      "id": 17,
+      "title": "Another Test for today",
+      "body": "testing",
+      "date": "2023-08-14",
+      "favorite": true
+    }
+  ]
+}

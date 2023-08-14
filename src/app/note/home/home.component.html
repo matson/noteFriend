@@ -1,0 +1,31 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Body</th>
+                <th scope="col">Date Created</th>
+                <th scope="col">Favorite</th>
+                <th scope="col">Actions</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <!--Fruit array gets looped-->
+            <tr *ngFor="let note of allNotes">
+                <th scope="row">{{ note.id }}</th>
+                <th>{{ note.title }}</th>
+                <th>{{ note.body }}</th>
+                <th>{{ note.date }}</th>
+                <th>{{ note.favorite }}</th>
+
+
+                <td><a href="" class="btn btn-primary" [routerLink]="['/note/edit', note.id]">Edit</a>
+                    <button type="button" (click)="deleteItem(note.id)" class="btn btn-danger ms-2">Delete</button>
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>
